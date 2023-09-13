@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://itahakhurram.github.io/personal-site/portfolio",
+  "homepage": "https://itahakhurram.github.io/personal-site",
   "private": true,
   "dependencies": {
     "@merc/react-timeline": "^0.1.42",
@@ -10,8 +10,10 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.0.0",
     "react": "^17.0.2",
+    "react-awesome-reveal": "^4.2.5",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
+    "react-parallax": "^3.5.1",
     "react-parallax-tilt": "^1.5.9",
     "react-particles-js": "^3.4.1",
     "react-redux": "^7.2.6",
@@ -22,10 +24,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
